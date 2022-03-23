@@ -1,10 +1,11 @@
 # SWC compiler & Babel Plugin Macros
-Make your next12 with SWC compiler & twin.macro + emotion 
+Make your next12 with SWC compiler & twin.macro + emotion.
+
 Also there is another repository from c-rick that you can use it for [tailwind + styled-component](https://github.com/c-rick/next-twin). 
 
 ## How to use
 
-First of all, you need replace your directories which are using emotion + tailwind.
+First of all, you need replace the directories with your directories that included the emotion & tailwind.
 so open `next-twin.js` and modify it.
 
 ```js
@@ -19,7 +20,7 @@ so open `next-twin.js` and modify it.
 
 Then you need to edit the next.config.js file.
 
-. Nextjs config with one plugin: 
+- Nextjs config with one plugin: 
 
 ```js
 // next.config.js
@@ -34,7 +35,7 @@ module.exports = withTwin(nextConfig);
 
 ```
 
-. Nextjs config with multiple plugins: 
+- Nextjs config with multiple plugins: 
 
 ```js
 const withPlugins = require('next-compose-plugins');
