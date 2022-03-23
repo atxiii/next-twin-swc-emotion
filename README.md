@@ -7,7 +7,7 @@ Also there is another repository from c-rick that you can use it for [tailwind +
 First of all, you need replace your directories which are using emotion + tailwind.
 so open `next-twin.js` and modify it.
 
-```
+```js
 // next-twin.js
 // ...
 // replace your directories
@@ -21,7 +21,7 @@ Then you need to edit the next.config.js file.
 
 . Nextjs config with one plugin: 
 
-```
+```js
 // next.config.js
 const withTwin = require('./next-twin.js');
 
@@ -36,7 +36,7 @@ module.exports = withTwin(nextConfig);
 
 . Nextjs config with multiple plugins: 
 
-```
+```js
 const withPlugins = require('next-compose-plugins');
 const { withContentlayer } = require('next-contentlayer');
 const withTwin = require('./next-twin.js');
